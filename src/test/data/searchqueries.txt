@@ -1,0 +1,13 @@
+Column select Column.name 
+from DB select DB.name
+from Table select Table.name
+from Table select Table - 
+from Table select Table.name , Table.owner 
+from Table select Table.name, Table.owner, Table.creteTime
+from DB select DB.name, DB.createTime
+from DB select DB.name=‘sales'
+from DB select DB.name=‘Sales’ 
+Table select name,owner,createTime
+from Table select Table.name, Table.owner 
+from table select owner='joe'
+from hive_table select tableName

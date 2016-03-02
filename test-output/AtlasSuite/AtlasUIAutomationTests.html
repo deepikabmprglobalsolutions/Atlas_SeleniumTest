@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  AtlasUIAutomationTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AtlasUIAutomationTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 01 12:23:32 GST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>181 seconds (181406 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.invalidSearchResult()'><b>invalidSearchResult</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest<br>Parameters: abc!@#</td>
+<td></td>
+<td>15</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.testPageElementsFromSearchPage()'><b>testPageElementsFromSearchPage</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>3</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validatNoOfeSelectOptions()'><b>validatNoOfeSelectOptions</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.HomePageTest.validateAboutLink()'><b>validateAboutLink</b><br>Test class: org.apache.atlas.seleniumtests.HomePageTest</td>
+<td></td>
+<td>20</td>
+<td>org.apache.atlas.seleniumtests.HomePageTest@644db282</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateFunctionalTestTag()'><b>validateFunctionalTestTag</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>42</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.HomePageTest.validateHelpLink()'><b>validateHelpLink</b><br>Test class: org.apache.atlas.seleniumtests.HomePageTest</td>
+<td></td>
+<td>22</td>
+<td>org.apache.atlas.seleniumtests.HomePageTest@644db282</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.HomePageTest.validateLogoVisible()'><b>validateLogoVisible</b><br>Test class: org.apache.atlas.seleniumtests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.HomePageTest@644db282</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.HomePageTest.validateMenuLinks()'><b>validateMenuLinks</b><br>Test class: org.apache.atlas.seleniumtests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.HomePageTest@644db282</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateSearchFunctionalty()'><b>validateSearchFunctionalty</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>15</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateSearchResultCount()'><b>validateSearchResultCount</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>15</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTableHeaders()'><b>validateTableHeaders</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest<br>Parameters: Name, Description, Owner, Tags, Tools</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTagInSearchResult()'><b>validateTagInSearchResult</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>18</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTagSearchFunctionality()'><b>validateTagSearchFunctionality</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>1</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTagSearchInSearchPage()'><b>validateTagSearchInSearchPage</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTagSearchResult()'><b>validateTagSearchResult</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateTagSectionInSearchPage()'><b>validateTagSectionInSearchPage</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validate_TextAndDSL_availability()'><b>validate_TextAndDSL_availability</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>0</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+<tr>
+<td title='org.apache.atlas.seleniumtests.SearchPageTest.validateselectOptions()'><b>validateselectOptions</b><br>Test class: org.apache.atlas.seleniumtests.SearchPageTest</td>
+<td></td>
+<td>4</td>
+<td>org.apache.atlas.seleniumtests.SearchPageTest@2902a840</td></tr>
+</table><p>
+</body>
+</html>

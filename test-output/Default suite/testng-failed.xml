@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="org.apache.atlas.seleniumtests.PaginationTest">
+        <methods>
+          <include name="Validate_LastPagePagination"/>
+          <include name="Validate_NumberOfRowsPerPage"/>
+          <include name="MiddlePageOfPaginationVarification"/>
+          <include name="Validate_NeumericboxAtBottom"/>
+          <include name="setup"/>
+          <include name="Validate_FirstPagePagination"/>
+          <include name="Validate_NumberOfRows"/>
+        </methods>
+      </class> <!-- org.apache.atlas.seleniumtests.PaginationTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

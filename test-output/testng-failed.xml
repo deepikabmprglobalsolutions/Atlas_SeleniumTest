@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AtlasSuite]" parallel="tests">
+  <parameter name="guid" value="src/test/data/guid.txt"/>
+  <parameter name="searchQueries" value="src/test/data/searchqueries.txt"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="validateLineage" value="Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435"/>
+  <parameter name="server_ip" value="162.249.6.39"/>
+  <parameter name="invalidSearchData" value="abc!@#"/>
+  <parameter name="browser_window_width" value="900"/>
+  <parameter name="browser_window_height" value="1600"/>
+  <parameter name="server_port" value="3682"/>
+  <listeners>
+    <listener class-name="com.apache.atlas.listener.AtlasTestReportListener"/>
+  </listeners>
+  <test name="AtlasUIAutomationTests(failed)" parallel="tests">
+    <parameter name="guid" value="src/test/data/guid.txt"/>
+    <parameter name="searchQueries" value="src/test/data/searchqueries.txt"/>
+    <parameter name="validateLineage" value="Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435"/>
+    <parameter name="invalidSearchData" value="abc!@#"/>
+    <classes>
+      <class name="org.apache.atlas.seleniumtests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loadHomeTest"/>
+        </methods>
+      </class> <!-- org.apache.atlas.seleniumtests.HomePageTest -->
+      <class name="org.apache.atlas.seleniumtests.SearchPageTest">
+        <methods>
+          <include name="loadSearchTest"/>
+          <include name="validateTagSearchFunctionality"/>
+        </methods>
+      </class> <!-- org.apache.atlas.seleniumtests.SearchPageTest -->
+    </classes>
+  </test> <!-- AtlasUIAutomationTests(failed) -->
+</suite> <!-- Failed suite [AtlasSuite] -->

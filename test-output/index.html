@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AtlasSuite">
+              <span class="suite-name border-passed">AtlasSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AtlasSuite">
+                    <span>D:\Deepika\software\workspace\Atlas\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AtlasSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AtlasSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AtlasSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AtlasSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AtlasSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AtlasSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AtlasSuite" class="hide-methods passed suite-AtlasSuite"> (hide)</a> <!-- hide-methods passed suite-AtlasSuite -->
+                      <a href="#" panel-name="suite-AtlasSuite" class="show-methods passed suite-AtlasSuite"> (show)</a> <!-- show-methods passed suite-AtlasSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AtlasSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="invalidSearchResult(abc!@#)">invalidSearchResult(abc!@#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="testPageElementsFromSearchPage">testPageElementsFromSearchPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validatNoOfeSelectOptions">validatNoOfeSelectOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.HomePageTest" hash-for-method="validateAboutLink">validateAboutLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateFunctionalTestTag">validateFunctionalTestTag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.HomePageTest" hash-for-method="validateHelpLink">validateHelpLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.HomePageTest" hash-for-method="validateLogoVisible">validateLogoVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.HomePageTest" hash-for-method="validateMenuLinks">validateMenuLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateSearchFunctionalty">validateSearchFunctionalty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateSearchResultCount">validateSearchResultCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTableHeaders(Name, Description, Owner, Tags, Tools)">validateTableHeaders(Name, Description, Owner, Tags, Tools)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTagInSearchResult">validateTagInSearchResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTagSearchFunctionality">validateTagSearchFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTagSearchInSearchPage">validateTagSearchInSearchPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTagSearchResult">validateTagSearchResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateTagSectionInSearchPage">validateTagSectionInSearchPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validate_TextAndDSL_availability">validate_TextAndDSL_availability</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AtlasSuite" title="org.apache.atlas.seleniumtests.SearchPageTest" hash-for-method="validateselectOptions">validateselectOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AtlasSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AtlasSuite" class="panel AtlasSuite">
+          <div class="suite-AtlasSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.atlas.seleniumtests.SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSearchResult(abc!@#)">
+                  </a> <!-- invalidSearchResult(abc!@#) -->
+                  <span class="method-name">invalidSearchResult</span>
+                  <span class="parameters">(abc!@#)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageElementsFromSearchPage">
+                  </a> <!-- testPageElementsFromSearchPage -->
+                  <span class="method-name">testPageElementsFromSearchPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatNoOfeSelectOptions">
+                  </a> <!-- validatNoOfeSelectOptions -->
+                  <span class="method-name">validatNoOfeSelectOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFunctionalTestTag">
+                  </a> <!-- validateFunctionalTestTag -->
+                  <span class="method-name">validateFunctionalTestTag</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchFunctionalty">
+                  </a> <!-- validateSearchFunctionalty -->
+                  <span class="method-name">validateSearchFunctionalty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchResultCount">
+                  </a> <!-- validateSearchResultCount -->
+                  <span class="method-name">validateSearchResultCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTableHeaders(Name, Description, Owner, Tags, Tools)">
+                  </a> <!-- validateTableHeaders(Name, Description, Owner, Tags, Tools) -->
+                  <span class="method-name">validateTableHeaders</span>
+                  <span class="parameters">(Name, Description, Owner, Tags, Tools)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTagInSearchResult">
+                  </a> <!-- validateTagInSearchResult -->
+                  <span class="method-name">validateTagInSearchResult</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTagSearchFunctionality">
+                  </a> <!-- validateTagSearchFunctionality -->
+                  <span class="method-name">validateTagSearchFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTagSearchInSearchPage">
+                  </a> <!-- validateTagSearchInSearchPage -->
+                  <span class="method-name">validateTagSearchInSearchPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTagSearchResult">
+                  </a> <!-- validateTagSearchResult -->
+                  <span class="method-name">validateTagSearchResult</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTagSectionInSearchPage">
+                  </a> <!-- validateTagSectionInSearchPage -->
+                  <span class="method-name">validateTagSectionInSearchPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_TextAndDSL_availability">
+                  </a> <!-- validate_TextAndDSL_availability -->
+                  <span class="method-name">validate_TextAndDSL_availability</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateselectOptions">
+                  </a> <!-- validateselectOptions -->
+                  <span class="method-name">validateselectOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AtlasSuite-class-passed -->
+          <div class="suite-AtlasSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.apache.atlas.seleniumtests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAboutLink">
+                  </a> <!-- validateAboutLink -->
+                  <span class="method-name">validateAboutLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHelpLink">
+                  </a> <!-- validateHelpLink -->
+                  <span class="method-name">validateHelpLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLogoVisible">
+                  </a> <!-- validateLogoVisible -->
+                  <span class="method-name">validateLogoVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMenuLinks">
+                  </a> <!-- validateMenuLinks -->
+                  <span class="method-name">validateMenuLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AtlasSuite-class-passed -->
+        </div> <!-- panel AtlasSuite -->
+        <div panel-name="test-xml-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Deepika\software\workspace\Atlas\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AtlasSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;server_ip&quot; value=&quot;162.249.6.39&quot;/&gt;
+  &lt;parameter name=&quot;browser_window_width&quot; value=&quot;900&quot;/&gt;
+  &lt;parameter name=&quot;server_port&quot; value=&quot;3682&quot;/&gt;
+  &lt;parameter name=&quot;browser_window_height&quot; value=&quot;1600&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.apache.atlas.listener.AtlasTestReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;AtlasUIAutomationTests&quot;&gt;
+    &lt;parameter name=&quot;guid&quot; value=&quot;src/test/data/guid.txt&quot;/&gt;
+    &lt;parameter name=&quot;searchQueries&quot; value=&quot;src/test/data/searchqueries.txt&quot;/&gt;
+    &lt;parameter name=&quot;validateLineage&quot; value=&quot;Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435&quot;/&gt;
+    &lt;parameter name=&quot;invalidSearchData&quot; value=&quot;abc!@#&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.apache.atlas.seleniumtests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;org.apache.atlas.seleniumtests.SearchPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AtlasUIAutomationTests --&gt;
+&lt;/suite&gt; &lt;!-- AtlasSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AtlasSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AtlasUIAutomationTests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AtlasSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AtlasSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AtlasSuite');
+function tableData_AtlasSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateFunctionalTestTag')
+data.setCell(0, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(0, 3, 42273);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateHelpLink')
+data.setCell(1, 2, 'org.apache.atlas.seleniumtests.HomePageTest')
+data.setCell(1, 3, 22092);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateAboutLink')
+data.setCell(2, 2, 'org.apache.atlas.seleniumtests.HomePageTest')
+data.setCell(2, 3, 20562);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateTagInSearchResult')
+data.setCell(3, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(3, 3, 18773);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateSearchResultCount')
+data.setCell(4, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(4, 3, 15651);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidSearchResult')
+data.setCell(5, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(5, 3, 15620);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateSearchFunctionalty')
+data.setCell(6, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(6, 3, 15351);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateselectOptions')
+data.setCell(7, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(7, 3, 4282);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPageElementsFromSearchPage')
+data.setCell(8, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(8, 3, 3238);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateTagSearchFunctionality')
+data.setCell(9, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(9, 3, 1637);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateTagSearchResult')
+data.setCell(10, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(10, 3, 315);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateTableHeaders')
+data.setCell(11, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(11, 3, 68);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validatNoOfeSelectOptions')
+data.setCell(12, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(12, 3, 62);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateMenuLinks')
+data.setCell(13, 2, 'org.apache.atlas.seleniumtests.HomePageTest')
+data.setCell(13, 3, 43);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateLogoVisible')
+data.setCell(14, 2, 'org.apache.atlas.seleniumtests.HomePageTest')
+data.setCell(14, 3, 23);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validate_TextAndDSL_availability')
+data.setCell(15, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(15, 3, 16);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateTagSearchInSearchPage')
+data.setCell(16, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(16, 3, 16);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateTagSectionInSearchPage')
+data.setCell(17, 2, 'org.apache.atlas.seleniumtests.SearchPageTest')
+data.setCell(17, 3, 12);
+window.suiteTableData['AtlasSuite']= { tableData: data, tableDiv: 'times-div-AtlasSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-AtlasSuite">
+              </div> <!-- times-div-AtlasSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AtlasSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AtlasSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.atlas.seleniumtests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup([Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">loadHomeTest([Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/...)</span>
+                <span class="method-start">5842 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">validateAboutLink</span>
+                <span class="method-start">25207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateHelpLink</span>
+                <span class="method-start">45771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateLogoVisible</span>
+                <span class="method-start">67864 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateMenuLinks</span>
+                <span class="method-start">67889 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.atlas.seleniumtests.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loadSearchTest([Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/...)</span>
+                <span class="method-start">67932 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">invalidSearchResult(abc!@#)</span>
+                <span class="method-start">69907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPageElementsFromSearchPage</span>
+                <span class="method-start">85528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatNoOfeSelectOptions</span>
+                <span class="method-start">88767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateFunctionalTestTag</span>
+                <span class="method-start">88831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSearchFunctionalty</span>
+                <span class="method-start">131106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateSearchResultCount</span>
+                <span class="method-start">146459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTableHeaders(Name, Description, Owner, Tags, Tools)</span>
+                <span class="method-start">162112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTagInSearchResult</span>
+                <span class="method-start">162181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTagSearchFunctionality</span>
+                <span class="method-start">180956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTagSearchInSearchPage</span>
+                <span class="method-start">182594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTagSearchResult</span>
+                <span class="method-start">182611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateTagSectionInSearchPage</span>
+                <span class="method-start">182927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_TextAndDSL_availability</span>
+                <span class="method-start">182939 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateselectOptions</span>
+                <span class="method-start">182956 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.apache.atlas.seleniumtests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">187276 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

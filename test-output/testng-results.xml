@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AtlasSuite" duration-ms="181406" started-at="2016-03-01T08:23:32Z" finished-at="2016-03-01T08:26:33Z">
+    <groups>
+    </groups>
+    <test name="AtlasUIAutomationTests" duration-ms="181406" started-at="2016-03-01T08:23:32Z" finished-at="2016-03-01T08:26:33Z">
+      <class name="org.apache.atlas.seleniumtests.HomePageTest">
+        <test-method status="PASS" signature="setup(org.testng.xml.XmlTest)[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="setup" is-config="true" duration-ms="5832" started-at="2016-03-01T12:23:26Z" description="Test setup" finished-at="2016-03-01T12:23:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/test/data/searchqueries.txtvalidateLineage=>Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435invalidSearchData=>abc!@#][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=org.apache.atlas.seleniumtests.HomePageTest] [XmlClass class=org.apache.atlas.seleniumtests.SearchPageTest]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loadHomeTest(org.testng.xml.XmlTest)[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="loadHomeTest" is-config="true" duration-ms="19362" started-at="2016-03-01T12:23:32Z" description="HomePage Test Setup" finished-at="2016-03-01T12:23:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/test/data/searchqueries.txtvalidateLineage=>Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435invalidSearchData=>abc!@#][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=org.apache.atlas.seleniumtests.HomePageTest] [XmlClass class=org.apache.atlas.seleniumtests.SearchPageTest]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomeTest -->
+        <test-method status="PASS" signature="validateAboutLink()[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="validateAboutLink" duration-ms="20562" started-at="2016-03-01T12:23:51Z" finished-at="2016-03-01T12:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAboutLink -->
+        <test-method status="PASS" signature="validateHelpLink()[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="validateHelpLink" duration-ms="22092" started-at="2016-03-01T12:24:12Z" finished-at="2016-03-01T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHelpLink -->
+        <test-method status="PASS" signature="validateLogoVisible()[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="validateLogoVisible" duration-ms="23" started-at="2016-03-01T12:24:34Z" finished-at="2016-03-01T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoVisible -->
+        <test-method status="PASS" signature="validateMenuLinks()[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="validateMenuLinks" duration-ms="43" started-at="2016-03-01T12:24:34Z" finished-at="2016-03-01T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMenuLinks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.apache.atlas.seleniumtests.HomePageTest@644db282]" name="tearDown" is-config="true" duration-ms="601" started-at="2016-03-01T12:26:33Z" finished-at="2016-03-01T12:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.apache.atlas.seleniumtests.HomePageTest -->
+      <class name="org.apache.atlas.seleniumtests.SearchPageTest">
+        <test-method status="PASS" signature="loadSearchTest(org.testng.xml.XmlTest)[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="loadSearchTest" is-config="true" duration-ms="1971" started-at="2016-03-01T12:24:34Z" description="SearchPage Test Setup" finished-at="2016-03-01T12:24:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "AtlasUIAutomationTests" verbose:1[parameters:guid=>src/test/data/guid.txtsearchQueries=>src/test/data/searchqueries.txtvalidateLineage=>Metric:084f35c8-6ca2-4aea-b8d5-dcc45297d435invalidSearchData=>abc!@#][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=org.apache.atlas.seleniumtests.HomePageTest] [XmlClass class=org.apache.atlas.seleniumtests.SearchPageTest]  packages:] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadSearchTest -->
+        <test-method status="PASS" signature="invalidSearchResult(java.lang.String)[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="invalidSearchResult" duration-ms="15620" started-at="2016-03-01T12:24:36Z" data-provider="invalidSearchDataFeed" finished-at="2016-03-01T12:24:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc!@#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearchResult -->
+        <test-method status="PASS" signature="testPageElementsFromSearchPage()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="testPageElementsFromSearchPage" duration-ms="3238" started-at="2016-03-01T12:24:52Z" finished-at="2016-03-01T12:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageElementsFromSearchPage -->
+        <test-method status="PASS" signature="validatNoOfeSelectOptions()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validatNoOfeSelectOptions" duration-ms="62" started-at="2016-03-01T12:24:55Z" finished-at="2016-03-01T12:24:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatNoOfeSelectOptions -->
+        <test-method status="PASS" signature="validateFunctionalTestTag()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateFunctionalTestTag" duration-ms="42273" started-at="2016-03-01T12:24:55Z" finished-at="2016-03-01T12:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFunctionalTestTag -->
+        <test-method status="PASS" signature="validateSearchFunctionalty()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateSearchFunctionalty" duration-ms="15351" started-at="2016-03-01T12:25:37Z" finished-at="2016-03-01T12:25:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchFunctionalty -->
+        <test-method status="PASS" signature="validateSearchResultCount()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateSearchResultCount" duration-ms="15651" started-at="2016-03-01T12:25:52Z" finished-at="2016-03-01T12:26:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchResultCount -->
+        <test-method status="PASS" signature="validateTableHeaders(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTableHeaders" duration-ms="68" started-at="2016-03-01T12:26:08Z" data-provider="searchTableHeaders" finished-at="2016-03-01T12:26:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Description]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Owner]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tags]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Tools]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTableHeaders -->
+        <test-method status="PASS" signature="validateTagInSearchResult()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTagInSearchResult" duration-ms="18773" started-at="2016-03-01T12:26:08Z" finished-at="2016-03-01T12:26:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTagInSearchResult -->
+        <test-method status="PASS" signature="validateTagSearchFunctionality()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTagSearchFunctionality" duration-ms="1637" started-at="2016-03-01T12:26:27Z" finished-at="2016-03-01T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTagSearchFunctionality -->
+        <test-method status="PASS" signature="validateTagSearchInSearchPage()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTagSearchInSearchPage" duration-ms="16" started-at="2016-03-01T12:26:29Z" finished-at="2016-03-01T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTagSearchInSearchPage -->
+        <test-method status="PASS" signature="validateTagSearchResult()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTagSearchResult" duration-ms="315" started-at="2016-03-01T12:26:29Z" finished-at="2016-03-01T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTagSearchResult -->
+        <test-method status="PASS" signature="validateTagSectionInSearchPage()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateTagSectionInSearchPage" duration-ms="12" started-at="2016-03-01T12:26:29Z" finished-at="2016-03-01T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTagSectionInSearchPage -->
+        <test-method status="PASS" signature="validate_TextAndDSL_availability()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validate_TextAndDSL_availability" duration-ms="16" started-at="2016-03-01T12:26:29Z" finished-at="2016-03-01T12:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_TextAndDSL_availability -->
+        <test-method status="PASS" signature="validateselectOptions()[pri:0, instance:org.apache.atlas.seleniumtests.SearchPageTest@2902a840]" name="validateselectOptions" duration-ms="4282" started-at="2016-03-01T12:26:29Z" finished-at="2016-03-01T12:26:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateselectOptions -->
+      </class> <!-- org.apache.atlas.seleniumtests.SearchPageTest -->
+    </test> <!-- AtlasUIAutomationTests -->
+  </suite> <!-- AtlasSuite -->
+</testng-results>
