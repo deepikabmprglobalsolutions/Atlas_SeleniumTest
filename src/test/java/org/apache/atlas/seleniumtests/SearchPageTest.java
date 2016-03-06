@@ -28,21 +28,21 @@ public class SearchPageTest extends WebDriverWrapper {
 		searchPage.launchApp();
 	}
 
-	@Test
+	@Test(priority = 11)
 	public void testPageElementsFromSearchPage() {
 		LOGGER.info("STARTED: Test testPageElements from SearchPage");
 		homePage.verifyPageLoadSuccessfully();
 		LOGGER.info("ENDED: Test testPageElements from SearchPage");
 	}
 
-	@Test
+	@Test(priority=14)
 	public void validateSearchFunctionalty() {
 		LOGGER.info("STARTED: Test searchTestMethod");
 		searchPage.searchQuery("Fact");
 		LOGGER.info("ENDED: Test searchTestMethod");
 	}
 
-	@Test(dataProvider = AtlasConstants.INVALID_SEARCH_STRING, dataProviderClass = SearchPage.class)
+	@Test(dataProvider = AtlasConstants.INVALID_SEARCH_STRING, dataProviderClass = SearchPage.class, priority = 10)
 	public void invalidSearchResult(String invalidQuery) {
 		LOGGER.info("STARTED: Test verifySearchResultNegative");
 		searchPage.searchQuery(invalidQuery);
@@ -74,7 +74,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test verifySearchResultNegative");
 	}
 
-	@Test
+	@Test(priority=16)
 	public void validateSearchResultCount() {
 		LOGGER.info("STARTED: Test validateSearchResult");
 		
@@ -86,6 +86,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		
 		
 		String SEARCH_QUERY = "Table";
+		
 		searchPage.searchQuery(SEARCH_QUERY);
 		String expectedMessage = searchPage.searchPageElements.resultCount
 				.getText();
@@ -96,7 +97,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test validateSearchResult");
 	}
 
-/*	@Test(dataProvider = AtlasConstants.SEARCH_STRING, dataProviderClass = SearchPage.class)
+	@Test(dataProvider = AtlasConstants.SEARCH_STRING, dataProviderClass = SearchPage.class, priority=15)
 	public void validateSearchQueries(String token) {
 		LOGGER.info("STARTED: Test validatePagination");
 		searchPage.searchQuery(token.toString());
@@ -143,20 +144,10 @@ public class SearchPageTest extends WebDriverWrapper {
 					"Next button enabled");
 		}
 		LOGGER.info("ENDED: Test validatePagination");
-	}*/
+	}
 
-/*	@Test(dataProvider = AtlasConstants.SEARCH_TABLE_HEADERS, dataProviderClass = SearchPage.class)
-	public void validateTableHeaders(String expectedTableHeaders[]) {
-		LOGGER.info("STARTED: Test validateTableHeader");
-		String[] actualHeaders = searchPage.getSearchResultTableHeaders();
-		String[] expectedHeaders = expectedTableHeaders;
-		Arrays.asList(actualHeaders);
-		Assert.assertEquals(actualHeaders, expectedHeaders,
-				"Table Header Validation");
-		LOGGER.info("ENDED: Test validateTableHeader");
-	}*/
 	
-	@Test(dataProvider = AtlasConstants.SEARCH_TABLE_HEADERS, dataProviderClass = SearchPage.class)
+	@Test(dataProvider = AtlasConstants.SEARCH_TABLE_HEADERS, dataProviderClass = SearchPage.class, priority=17)
 	public void validateTableHeaders(String expectedTableHeader1,String expectedTableHeader2,String expectedTableHeader3,String expectedTableHeader4,String expectedTableHeader5) {
 		LOGGER.info("STARTED: Test validateTableHeader");
 		String[] actualHeaders = searchPage.getSearchResultTableHeaders();
@@ -174,7 +165,7 @@ public class SearchPageTest extends WebDriverWrapper {
 	
 
 
-	@Test
+	@Test(priority=22)
 	public void validateTagSectionInSearchPage() {
 		LOGGER.info("STARTED: Test validateTagSection");
 		Assert.assertTrue(webElement
@@ -183,7 +174,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test validateTagSection");
 	}
 
-	@Test
+	@Test(priority=18)
 	public void validateTagInSearchResult() {
 		LOGGER.info("STARTED: Test validateTagInSearchResult");
 		String SEARCH_QUERY = "Table";
@@ -202,7 +193,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test validateTagInSearchResult");
 	}
 
-	@Test
+	@Test(priority=21)
 	public void validateTagSearchResult() {
 		LOGGER.info("STARTED: Test validateTagSearchResult");
 		boolean resultCount = searchPage.searchFromTags("Dimension", true);
@@ -211,7 +202,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test validateTagSearchResult");
 	}
 
-	@Test
+	@Test(priority=13)
 	public void validateFunctionalTestTag() {
 		LOGGER.info("STARTED: Test validateFunctionalTestTag");
 		searchPage.navigateToSearchTab();
@@ -233,7 +224,7 @@ public class SearchPageTest extends WebDriverWrapper {
 	// Added test cases below by Deepika for tagSearch at left 
 	// and DSL and Text select in search Page.
 
-	@Test
+	@Test(priority=20)
 	public void validateTagSearchInSearchPage() {
 		LOGGER.info("STARTED: Tag Availablity in Search Page");
 
@@ -245,7 +236,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Tag Availablity in Search Page");
 	}
 
-	@Test
+	@Test(priority=19)
 	public void validateTagSearchFunctionality() {
 		boolean verifytagfunctionality =true;
 		
@@ -278,7 +269,7 @@ public class SearchPageTest extends WebDriverWrapper {
 	 * LOGGER.info("STARTED: Test validateToolsInSearchResult"); }
 	 */
 
-	@Test
+	@Test(priority=23)
 	public void validate_TextAndDSL_availability() {
 		LOGGER.info("STARTED: Test Select Availablity in Search Page");
 		// searchPage.selectAvailability();
@@ -290,7 +281,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Test Select Availablity in Search Page");
 	}
 
-	@Test
+	@Test(priority=12)
 	public void validatNoOfeSelectOptions() {
 		LOGGER.info("STARTED: validate Number of options in Select");
 		int size = searchPage.getSizeList();
@@ -299,7 +290,7 @@ public class SearchPageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: validate Number of options in Select");
 	}
 
-	@Test
+	@Test(priority = 24)
 	public void validateselectOptions() {
 		LOGGER.info("STARTED: validateselectOptions");
 		searchPage.validateselectOptions();

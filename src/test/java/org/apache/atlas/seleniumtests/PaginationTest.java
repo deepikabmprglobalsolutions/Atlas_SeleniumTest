@@ -38,7 +38,7 @@ public class PaginationTest extends WebDriverWrapper {
 
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 4)
 	public void Validate_NumberOfRows() {
 		
 		LOGGER.info("Pagination Test Cases begins:");
@@ -61,7 +61,7 @@ public class PaginationTest extends WebDriverWrapper {
 
 
 	
-	@Test(priority = 1)
+	@Test(priority = 5)
 	public void Validate_NeumericboxAtBottom() {
 		AtlasDriverUtility.waitForPageLoad(driver, 320);
 		
@@ -90,7 +90,7 @@ public class PaginationTest extends WebDriverWrapper {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 6)
 	public void Validate_FirstPagePagination() {
 		AtlasDriverUtility.waitForPageLoad(driver, 320);
 		LOGGER.info("\nSTARTED: Validate_FirstPagePagination");
@@ -105,7 +105,7 @@ public class PaginationTest extends WebDriverWrapper {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 7)
 	public void Validate_LastPagePagination() {
 		AtlasDriverUtility.waitForPageLoad(driver, 320);
 		LOGGER.info("\nSTARTED: Validate_FirstPagePagination");
@@ -119,7 +119,7 @@ public class PaginationTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: Validate_LastPagePagination");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 8)
 	public void MiddlePageOfPaginationVarification() {
 		AtlasDriverUtility.waitForPageLoad(driver, 320);
 		LOGGER.info("\nSTARTED: Varification of Middle Page");
@@ -135,7 +135,7 @@ public class PaginationTest extends WebDriverWrapper {
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 9)
 	public void Validate_NumberOfRowsPerPage() {
 		AtlasDriverUtility.waitForPageLoad(driver, 320);
 		LOGGER.info("\nSTARTED: Validate_NumberOfRowsPerPage");

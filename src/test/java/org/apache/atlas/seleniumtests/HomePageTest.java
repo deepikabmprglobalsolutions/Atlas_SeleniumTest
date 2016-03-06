@@ -57,7 +57,7 @@ public class HomePageTest extends WebDriverWrapper {
 
 	@AfterSuite
 	public void tearDown() {
-		closeBrowser();
+		//closeBrowser();
 		/*
 		 * SendReport.sendReportByEmail("fayazm@mprglobalsolutions.com",
 		 * "Fayaz@786", "fayazm@mprglobalsolutions.com", "Test Excution Report",
@@ -85,15 +85,19 @@ public class HomePageTest extends WebDriverWrapper {
 
 	//Visibility of Atlas Logo on search Page
 	
-	  @Test public void validateLogoVisible() {
-	  LOGGER.info("STARTED: validateAtlasLogo is Visible/Exists on search Page");
+	  @Test(priority = 0)
+	  public void validateLogoVisible() {
+	  LOGGER.info("STARTED: validate AtlasLogo Visiblility on search Page");
+	  AtlasDriverUtility.waitUntilElementVisible(
+			  homePage.homePageElements.atlasLogo, 100);
+	  
 	  UIAssert.assertDisplayed(homePage.homePageElements.atlasLogo,
 	  "Atlas Logo"); AtlasDriverUtility.waitForPageLoad(driver, 60);
 	  homePage.validateLogoVisible();
-	  LOGGER.info("ENDED: validateAtlasLogo Visibility"); }
+	  LOGGER.info("ENDED: validate AtlasLogo Visibility"); }
 	 
 
-	@Test
+	@Test(priority = 1)
 	public void validateMenuLinks() {
 		LOGGER.info("STARTED: validatePageMenuBar");
 		AtlasDriverUtility.waitForPageLoad(driver, 60);
@@ -104,7 +108,7 @@ public class HomePageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: validatePageMenuBar");
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void validateHelpLink() {
 		LOGGER.info("STARTED: validateHelpLink");
 		AtlasDriverUtility.waitForPageLoad(driver, 60);
@@ -114,7 +118,7 @@ public class HomePageTest extends WebDriverWrapper {
 		LOGGER.info("ENDED: validateHelpLink");
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void validateAboutLink() {
 		LOGGER.info("STARTED: validateAboutLink");
 		AtlasDriverUtility.waitForPageLoad(driver, 60);
@@ -122,5 +126,7 @@ public class HomePageTest extends WebDriverWrapper {
 				Menu.ABOUT.toString() + LINK_CLICKED);
 		homePage.homePageElements.OK.click();
 		LOGGER.info("ENDED: validateAboutLink");
+		AtlasDriverUtility.customWait(3);
+		
 	}
 }

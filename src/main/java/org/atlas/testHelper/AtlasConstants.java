@@ -23,4 +23,7 @@ public class AtlasConstants {
 	
 	public static final String LINK_CLICKED = "link clicked";
 	public static final String BROWSER_TYPE = "firefox";
+	
+	public static final String SPELL_CHECKER="atlasspellchecker";
+	
 }

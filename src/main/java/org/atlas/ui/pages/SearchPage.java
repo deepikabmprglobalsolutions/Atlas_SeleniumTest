@@ -43,6 +43,7 @@ public class SearchPage extends AtlasDriverUtility {
 
 	public void searchQuery(String text) {
 		navigateToSearchTab();
+		customWait(1);
 		webElement.clearAndSendKeys(searchPageElements.searchBox, text);
 		searchPageElements.searchBox.sendKeys(Keys.ENTER);
 		long startTime = System.currentTimeMillis();

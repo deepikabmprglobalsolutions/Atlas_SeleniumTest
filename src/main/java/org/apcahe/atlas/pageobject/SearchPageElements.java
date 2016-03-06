@@ -20,7 +20,11 @@ public class SearchPageElements extends HomePageElements {
 /*	@FindBy(css = "input[type='text']")
 	public WebElement searchBox;*/
 	
-	@FindBy(xpath = "//div/input[@placeholder='Search: Table, DB, Column']")
+	/*@FindBy(xpath = "//div/input[@placeholder='Search: Table, DB, Column']")
+	public WebElement searchBox;*/
+	
+	
+	@FindBy(xpath = "//div/input[@data-ng-model='query']")
 	public WebElement searchBox;
 
 	@FindBy(css = "button[type='submit']")

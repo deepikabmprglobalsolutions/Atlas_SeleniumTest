@@ -40,7 +40,10 @@ public class PaginationElements {
 	public WebElement wb;
 	*/
 	
-	@FindBy(xpath = "//div/input[@placeholder='Search: Table, DB, Column']")
+	/*@FindBy(xpath = "//div/input[@placeholder='Search: Table, DB, Column']")
+	public WebElement wb;*/
+	
+	@FindBy(xpath = "//div/input[@data-ng-model='query']")
 	public WebElement wb;
 	
 	@FindBy(css = "tr")

@@ -1,0 +1,11 @@
+Apache Atlas
+Search
+Tags
+Help
+About
+Tag Definition
+Tag Name
+Parent Tag
+Add Attribute
+Save
+Attribute name
